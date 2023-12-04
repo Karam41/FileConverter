@@ -1,0 +1,14 @@
+<!-- download.html -->
+{% extends 'base.html' %}
+
+{% block title %}Download File{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Your download content here -->
+    <h2 class="text-center mb-4">File Downloaded Successfully!</h2>
+    <p class="text-center">
+        <a href="{{ url_for('download_file', filename=filename) }}" class="btn btn-primary">Download Converted File</a>
+    </p>
+</div>
+{% endblock %}
